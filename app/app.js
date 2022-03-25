@@ -9,4 +9,8 @@ app.get('/', (req, res) => {
     res.json({"resCode": "S0001", "resMsg": "정상 처리되었습니다."});
 })
 
+app.get('/test', (req, res) => {
+    res.status(200);
+})
+
 app.listen(3921,()=>console.log(`http://localhost:3921`));
